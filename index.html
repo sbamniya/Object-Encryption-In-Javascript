@@ -45,14 +45,13 @@
 	        }
 	    }
 	}
-	var salt = "some string here";
-
+	
 	originalElement.innerHTML = JSON.stringify(obj);
 	
-	var encrypted = ObjEncrypt(obj, salt);
+	var encrypted = ObjEncrypt(obj);
 	encryptElement.innerHTML = encrypted;
 	
-	var decrypted = ObjDecrypt(encrypted, salt);
+	var decrypted = ObjDecrypt(encrypted);
 	descyptElement.innerHTML = JSON.stringify(decrypted);
 </script>	
 </html>
